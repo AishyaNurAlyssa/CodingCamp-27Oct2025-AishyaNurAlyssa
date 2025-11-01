@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+
+  <!-- CSS External File Link -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Tailwind CSS CDN Link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6">
+
+  <!-- Header Content -->
+  <header>
+    <h1 class="text-3xl font-bold mb-4">Todo List Website</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Form Section -->
+    <section>
+      <form class="flex gap-4 mb-4" onsubmit="return false;">
+        <input class="border p-2 rounded" type="text" id="todo-input" placeholder="Enter a new todo item">
+        <input class="border p-2 rounded" type="date" id="todo-date">
+      </form>
+
+      <button class="border p-2 rounded bg-blue-500 text-white" onclick="addTodo();" type="button" id="add-todo-btn">
+        Add Todo
+      </button>
+    </section>
+
+    <!-- Action Section -->
+    <section class="flex justify-between my-4">
+      <button class="border p-2 rounded bg-purple-500 text-white" id="clear-all-btn">Clear All Todos</button>
+      <button class="border p-2 rounded bg-red-500 text-white" id="filter-todos-btn">Filter Todos</button>
+    </section>
+
+    <!-- Todo List Section -->
+    <section>
+      <ul id="todo-list">
+        <li>No todos available</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer Content -->
+  <footer class="mt-6">
+    <p class="text-center text-gray-500">&copy; 2025 Todo List Website - Aishya</p>
+  </footer>
+
+  <!-- Javascript External File Link -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
